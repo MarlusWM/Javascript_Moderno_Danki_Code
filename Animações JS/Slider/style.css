@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.container {
+    position: relative;
+    height: 300px;
+    border: 10px solid green;
+}
+
+.container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    border: 10px solid blue;
+    transition: 1s;
+}
+
+.bullets {
+    border: 10px solid red;
+}
+
+.bullet-single {
+    background-color: #ccc;
+    margin: 0px 8px;
+    cursor: pointer;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+}
+
+.active-bullet {
+    background-color: #333;
+}

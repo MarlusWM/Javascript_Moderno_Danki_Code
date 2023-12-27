@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <script>
+        alert('conectado')
+
+/*        function pessoa() {//funcao chamando pessoa()
+            this.nome = 'guilherme'; //isso.nome recebe de guilherme
+            this.idade = '17 anos';
+            this.signo = '';
+
+            this.printIdade = function() { //assim como consigo fazer uma funcao em uma variavel, consigo fazer no this (this parece ser um outro nome pra usar como variavel dentro de um objeto hehe) conseguindo chamar um atributo que esta dentro da funcao objeto
+                alert(this.idade);
+            }
+            this.printSigno = function(signo) {//funcao com parametro recebido (pode ser colocado parametro mas não é obrigatório)
+                alert(signo);//forma para mostrar o parametro recebido
+            }
+        }
+
+        var pessoa = new pessoa(); //variavel pessoa recebe a construcao do objeto pessoa (que é o chamado da funcao)
+        pessoa.nome = 'joao'; //consigo alterar o atributo da variavel nome
+
+        alert(pessoa.nome);
+        pessoa.printIdade();
+        pessoa.printSigno('cancer');//chamando funcao com parametro passado para a funcao
+*/
+//---------------------------------------------------------------------------------------------------
+//outra situação//
+/*        function individuo(){
+            this.titulado = 'pedro';
+            this.anos = '30';
+            this.anime = 'naruto';
+        }
+        var cidadao = new individuo(); //aqui poderia ser individuo = new individuo() como exemplo acima            
+        alert(cidadao.anime);//poderia ser individuo.anime mas na variavel eu troquei
+        alert(cidadao.titulado);
+
+        var cidadao_2 = new individuo(); //outra variável interagindo com os objetos
+        cidadao_2.titulado = 'pedroca'; //agora o nome é pedroca e nao mais pedro
+        alert(cidadao_2.titulado;) //chamado pra mostrar
+*/
+//------------------------------------------------------------------------------------
+//uma forma mais ágil
+/*
+function pet(nome, peso){
+    this.nome = nome;
+    this.peso = peso;
+}
+
+animal = new pet('cachorro', '20kg');
+animal_2 = new pet('gato', '3kg');
+
+alert(animal.nome);
+alert(animal.peso);
+alert(animal_2.nome);
+*/
+//-------------------------------------------------------------------------------------
+//fazer o método ágil com métodos de validação
+/*
+function carro(modelo, pneu){
+    if (modelo == undefined) {
+        modelo = 'automotor';
+    }
+
+    if (pneu == undefined){
+        pneu = 'status bom'
+    }
+
+    this.modelo = modelo;
+    this.pneu = pneu;
+}
+
+var veiculo = new carro()
+
+alert(veiculo.modelo)
+alert(veiculo.pneu)
+*/
+//--------------------------------------------------------------------------------------
+// passar um objeto como parametro da funcao
+
+function magic(){
+    this.deck = 'dragao';
+    this.mana = 'multicolor';
+    
+    this.returnRpg = function(game_2){ //passando o objeto game_2 que na verdade é o objeto rpg como paramentro
+        return game_2 //solicitando que retorne o game_2 que na verdade é rpg
+    }
+}
+
+function rpg(){
+    this.sistema = 'tormenta';
+    this.players = '4';
+}
+
+var game = new magic();
+var game_2 = new rpg();
+
+alert(game.returnRpg(game_2).sistema); //acessa a funcao game(magic()), chama a funcao returnRpg que está com o parâmetro como o segundo objeto que é game_2(rpg), dando acesso aos atributos do objeto rpg()
+
+    </script>
+
+</body>
+</html>

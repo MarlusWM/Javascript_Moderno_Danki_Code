@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+header {
+    background-color: blueviolet;
+    color: white;
+    height: 200px;
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 1px 5px 5px 5px rgb(255, 0, 247);
+}
+
+header > h1 {
+    width: 100%;
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+body {
+    margin: 100px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.listaCadastro {
+    margin: 50px;
+    text-align: center;
+}
+
+input {
+    width: 500px;
+    height: 50px;
+    margin: 5px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 1px 5px 5px 5px rgb(113, 113, 113);
+}
+
+#btnCadastrar {
+    background-color: rgb(2, 191, 191);
+    width: 50%;
+}
+
+.listaProdutos {
+    width: 400px;
+    margin: auto;
+}
+
+.listaProdutos :hover {
+    background-color: rgb(189, 189, 189);
+    border-radius: 20px;
+    color: black;
+}
+
+.listaProdutoSingle {
+    background-color: rgb(15, 15, 15);
+    margin: 5px;
+    padding: 1px;
+    border-radius: 20px;
+}
+
+.listaProdutoSingle > p {
+    background-color: rgb(34, 34, 34);
+    padding: 10px;
+    margin: 0px 100px 10px 100px;
+    border-radius: 50px;
+}
